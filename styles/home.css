@@ -30,7 +30,7 @@ body {
 
 #header {
 	grid-area: 3 / 3 / 4 / 15;
-	font-size: clamp(30px, 4vw, 4vw);
+	font-size: clamp(50px, 4vw, 4vw);
 	
 }
 
