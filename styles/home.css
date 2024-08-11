@@ -37,4 +37,5 @@ body {
 #welcomeP {
 	grid-area: 5 / 4 / 16 / 14;
 	align-self: start;
+	font-size: 45px;
 }
