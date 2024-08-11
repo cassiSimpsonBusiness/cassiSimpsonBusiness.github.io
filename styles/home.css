@@ -10,7 +10,7 @@ body {
 	width: 100vw;
 	display: grid;
 	place-items: center;
-	grid-template: repeat(16, minmax(20px, 1fr)) / repeat(16, minmax(20px, 1fr));
+	grid-template: repeat(16, minmax(31.25px, 1fr)) / repeat(16, minmax(31.25px, 1fr));
 }
 
 .pageBlock {
@@ -19,13 +19,15 @@ body {
 #topLinks {
 	grid-area: 1 / 1 / 2 / 17;
 	display: grid;
-	place-items: center;
+	align-items: center;
 	place-self: stretch;
 	grid-template: repeat(1, 1fr) / repeat(4, 1fr);
 }
 
 .topLink {
 	text-decoration: none;
+	font-size: clamp(25px, 2vw, 2vw);
+	text-align: center;
 }
 
 #header {
@@ -38,4 +40,6 @@ body {
 	grid-area: 5 / 4 / 16 / 14;
 	align-self: start;
 	font-size: 45px;
+	overflow-y: auto;
+	max-height: 75%;
 }
