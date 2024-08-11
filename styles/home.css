@@ -1,0 +1,40 @@
+* {
+	Border: 1px solid black;
+	padding: 0;
+	margin: 0;
+    overflow: hidden;
+}
+
+body {
+	height: 100vh;
+	width: 100vw;
+	display: grid;
+	place-items: center;
+	grid-template: repeat(16, minmax(20px, 1fr)) / repeat(16, minmax(20px, 1fr));
+}
+
+.pageBlock {
+}
+
+#topLinks {
+	grid-area: 1 / 1 / 2 / 17;
+	display: grid;
+	place-items: center;
+	place-self: stretch;
+	grid-template: repeat(1, 1fr) / repeat(4, 1fr);
+}
+
+.topLink {
+	text-decoration: none;
+}
+
+#header {
+	grid-area: 3 / 3 / 4 / 15;
+	font-size: clamp(30px, 4vw, 4vw);
+	
+}
+
+#welcomeP {
+	grid-area: 5 / 4 / 16 / 14;
+	align-self: start;
+}
