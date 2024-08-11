@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 * {
 	/*Border: 1px solid black;*/
 	padding: 0;
 	margin: 0;
     overflow: hidden;
+	color: black;
 }
 
 body {
@@ -10,7 +14,8 @@ body {
 	width: 100vw;
 	display: grid;
 	place-items: center;
-	grid-template: repeat(16, minmax(31.25px, 1fr)) / repeat(16, minmax(31.25px, 1fr));
+	grid-template: repeat(16, minmax(32.5px, 1fr)) / repeat(16, minmax(32.5px, 1fr));
+	font-family: "Raleway", sans-serif;
 }
 
 .pageBlock {
@@ -25,7 +30,6 @@ body {
 }
 
 .topLink {
-	text-decoration: none;
 	font-size: clamp(25px, 2vw, 2vw);
 	text-align: center;
 }
