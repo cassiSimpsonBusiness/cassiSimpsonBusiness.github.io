@@ -6,43 +6,101 @@
 	margin: 0;
     overflow: hidden;
 	color: black;
+	text-align: center;
+    user-select: none;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
 }
 
 body {
-	height: 100vh;
-	width: 100vw;
 	display: grid;
 	place-items: center;
 	grid-template: repeat(16, minmax(32.5px, 1fr)) / repeat(16, minmax(32.5px, 1fr));
 	font-family: "Raleway", sans-serif;
-}
-
-.pageBlock {
+	font-size: 1.5vw;
+	background-color: black;
+	background: url("../img/mainBack.jpg") no-repeat center;
+	background-size: cover;
+	cursor: none;
 }
 
 #topLinks {
 	grid-area: 1 / 1 / 2 / 17;
 	display: grid;
-	align-items: center;
+	place-items: center;
 	place-self: stretch;
 	grid-template: repeat(1, 1fr) / repeat(4, 1fr);
+	border-radius: 0 0 25px 25px;
+    z-index: 1;
+	cursor: auto;
+	background-color: white;
 }
 
-.topLink {
-	font-size: 1.5vw;
-	text-align: center;
+.spotlight {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+	background-color: rgba(0, 0, 0, 1);
+}
+
+#cTainer {
+	grid-area: 3 / 3 / 15 / 15;
+	align-self: start;
+	place-items: center;
+	display: grid;
+	grid-template: 1fr 2fr / 1fr ;
+	border-radius: 50px;
+    z-index: 1;
+	cursor: auto;
+	background-color: white;
 }
 
 #header {
-	grid-area: 3 / 3 / 4 / 15;
-	font-size: 4vw;
-	
+	font-size: 2.5em;
+	padding: 0.5vw 0.5vw 0vw 0.5vw;
 }
 
 #welcomeP {
-	grid-area: 5 / 4 / 16 / 14;
-	align-self: start;
-	font-size: 1.25vw;
-	overflow-y: auto;
-	max-height: 100%;
+	font-size: 0.9em;
+	padding: 0vw 2vw 2vw 2vw;
 }
+
+@media only screen and (max-width: 1000px) and (orientation: portrait) {
+	.topLink {
+		font-size: 2.75em;
+	}
+	
+	#header {
+		font-size: 5em;
+	}
+
+	#welcomeP {
+		font-size: 3em;
+	}
+	
+	.spotlight {
+		visibility: hidden;
+	}
+}
+
+@media only screen and (max-width: 1000px) and (orientation: landscape) {
+	.topLink {
+		font-size: 1.9em;
+	}
+	
+	#header {
+		font-size: 3em;
+	}
+
+	#welcomeP {
+		font-size: 2em;
+	}
+
+	.spotlight {
+		visibility: hidden;
+	}
+}
+
