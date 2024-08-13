@@ -1,20 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
-/* minimal */
-.page::-webkit-scrollbar {
-    width: .5em; /* counts only for the vertical scrollbar */
-    height: .5em; /* counts only for the horizontal scrollbar */
-}
-.page::-webkit-scrollbar-track {
-  background: #ccc;
-}
-.page::-webkit-scrollbar-thumb {
-  background: #888;
-}
-.page::-webkit-scrollbar-thumb:hover {
-  background: #555;
-}
-
 * {
 	/*Border: 1px solid black;*/
 	padding: 0;
@@ -44,20 +29,20 @@ body {
 }
 
 .topLink {
-	font-size: clamp(25px, 2vw, 2vw);
+	font-size: 1.5vw;
 	text-align: center;
 }
 
 #header {
 	grid-area: 3 / 3 / 4 / 15;
-	font-size: clamp(50px, 4vw, 4vw);
+	font-size: 4vw;
 	
 }
 
 #welcomeP {
 	grid-area: 5 / 4 / 16 / 14;
 	align-self: start;
-	font-size: 45px;
+	font-size: 1.25vw;
 	overflow-y: auto;
 	max-height: 100%;
 }
