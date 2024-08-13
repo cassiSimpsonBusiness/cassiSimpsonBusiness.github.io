@@ -1,11 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
-::-webkit-scrollbar {
-	width: 10px;
+/* minimal */
+.page::-webkit-scrollbar {
+    width: .5em; /* counts only for the vertical scrollbar */
+    height: .5em; /* counts only for the horizontal scrollbar */
 }
-
-::-webkit-scrollbar-thumb {
-	background: #888; 
+.page::-webkit-scrollbar-track {
+  background: #ccc;
+}
+.page::-webkit-scrollbar-thumb {
+  background: #888;
+}
+.page::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 
 * {
