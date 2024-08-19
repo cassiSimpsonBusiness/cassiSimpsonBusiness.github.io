@@ -46,8 +46,21 @@ body {
 	background-color: rgba(0, 0, 0, 1);
 }
 
+::-webkit-scrollbar {
+	width: 10px;
+	
+}
+
+::-webkit-scrollbar-track {
+	background: #f1f1f1; 
+}
+  
+::-webkit-scrollbar-thumb {
+	background: #888; 
+}
+
 #cTainer {
-	grid-area: 3 / 3 / 15 / 15;
+	grid-area: 3 / 3 / 16 / 15;
 	place-self: start center;
 	place-items: center;
 	display: grid;
@@ -68,6 +81,8 @@ body {
 	padding: 2svw;
 	padding-top: 0;
 	padding-bottom: 0;
+	max-height: 80svh;
+	overflow-y: auto;
 }
 
 #foot {
@@ -127,6 +142,7 @@ body {
 		padding: 3svh;
 		padding-bottom: 0;
 		padding-top: 0;
+		max-height: 45svh;
 	}
 	
     #foot {
@@ -148,8 +164,9 @@ body {
 }
 
 @media only screen and (max-width: 1000px) and (orientation: landscape) {
-	.topLinks {
-		font-size: 1.9em;
+	#topLinks {
+		font-size: 1.7em;
+		padding: 2svw 0 2svw 0;
 	}
 	
 	.spotlight {
@@ -162,6 +179,7 @@ body {
 
 	#content {
 		font-size: 1em;
+		max-height: 50svh;
 	}
 
 	#foot {
