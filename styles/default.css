@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+	/*Border: 1px solid black;*/
+	color: black;
+    user-select: none;
+	overflow: hidden;
+    text-align: center;
+}
+
+html, body {
+    min-height: 100svh;
+    max-height: 100svh;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	display: grid;
+	place-items: center;
+	grid-template: repeat(16, 1fr) / repeat(16, 1fr);
+	font-family: "Raleway", sans-serif;
+	font-size: 1.5vw;
+	background-color: black;
+	background: url("../img/mainBack.jpg") no-repeat center;
+	background-size: cover;
+	cursor: none;
+}
+
+#topLinks {
+	grid-area: 1 / 1 / 2 / 17;
+	display: grid;
+	place-items: center;
+	place-self: stretch;
+	grid-template: repeat(1, 1fr) / repeat(4, 1fr);
+	border-radius: 0 0 25px 25px;
+    z-index: 1;
+	cursor: auto;
+	background-color: white;
+}
+
+.spotlight {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+	background-color: rgba(0, 0, 0, 1);
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+	
+}
+
+::-webkit-scrollbar-track {
+	background: #f1f1f1; 
+}
+  
+::-webkit-scrollbar-thumb {
+	background: #888; 
+}
+
+#cTainer {
+	grid-area: 3 / 3 / 16 / 15;
+	place-self: start center;
+	place-items: center;
+	display: grid;
+	border-radius: 50px;
+    z-index: 1;
+	cursor: auto;
+	background-color: white;
+}
+
+#header {
+	font-size: 2.5em;
+	padding: 2svw;
+	align-self: start;
+}
+
+#content {
+	font-size: 0.9em;
+	padding: 2svw;
+	padding-top: 0;
+	padding-bottom: 0;
+	max-height: 80svh;
+	overflow-y: auto;
+}
+
+dt {
+	font-size: 1.5em;
+}
+
+dt, dd {
+    text-align: left;
+}
+
+@media only screen and (max-width: 1000px) and (orientation: portrait) {
+	#topLinks {
+		font-size: 2.75em;
+	}
+
+	.spotlight {
+		visibility: hidden;
+	}
+
+	#header {
+		font-size: 5em;
+		padding: 3svh;
+	}
+
+	#content {
+		font-size: 3em;
+		padding: 3svh;
+		padding-bottom: 0;
+		padding-top: 0;
+		max-height: 45svh;
+	}
+}
+
+@media only screen and (max-width: 1000px) and (orientation: landscape) {
+	#topLinks {
+		font-size: 1.7em;
+		padding: 2svw 0 2svw 0;
+	}
+	
+	.spotlight {
+		visibility: hidden;
+	}
+
+	#header {
+		font-size: 3em;
+	}
+
+	#content {
+		font-size: 1em;
+		max-height: 50svh;
+	}
+}

@@ -1,0 +1,48 @@
+#cTainer {
+	grid-area: 3 / 4 / 16 / 9;
+}
+
+#cTainerTwo {
+	grid-area: 3 / 9 / 16 / 14;
+	place-self: start center;
+	place-items: center;
+	display: grid;
+	border-radius: 50px;
+    z-index: 1;
+	cursor: auto;
+	background-color: white;
+}
+
+#content {
+    padding-bottom: 2svw;
+}
+
+@media only screen and (max-width: 1000px) and (orientation: portrait) {
+    
+    #cTainer, #cTainerTwo {
+	    font-size: 1.25vw;
+    }
+
+    #cTainer {
+        grid-area: 3 / 1 / 9 / 17;
+    }
+
+    #cTainerTwo {
+        grid-area: 10 / 1 / 17 / 17;
+    }
+
+    #content {
+        max-height: 30svh;
+    }
+
+}
+
+@media only screen and (max-width: 1000px) and (orientation: landscape) {
+    
+   
+    
+    #cTainer, #cTainerTwo {
+	    font-size: 1.4vw;
+    }
+
+}

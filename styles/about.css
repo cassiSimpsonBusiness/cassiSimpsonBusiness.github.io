@@ -11,11 +11,11 @@
     z-index: 1; 
     place-self: center;
     width: 15svw;
-	border-radius: 50px;
 }
 
 #pic img {
     width: 100%;
+	border-radius: 50px;
 }
 
 @media only screen and (max-width: 1000px) and (orientation: portrait) {
